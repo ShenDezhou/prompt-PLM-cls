@@ -2,9 +2,9 @@
 #assert os.environ['COLAB_TPU_ADDR'], 'Make sure to select TPU from Edit > Notebook settings > Hardware accelerator'
 
 DIST_BUCKET="gs://tpu-pytorch/wheels"
-TORCH_WHEEL="torch-1.15-cp36-cp36m-linux_x86_64.whl"
-TORCH_XLA_WHEEL="torch_xla-1.15-cp36-cp36m-linux_x86_64.whl"
-TORCHVISION_WHEEL="torchvision-0.3.0-cp36-cp36m-linux_x86_64.whl"
+TORCH_WHEEL="torch-1.15-cp37-cp37m-linux_x86_64.whl"
+TORCH_XLA_WHEEL="torch_xla-1.15-cp37-cp37m-linux_x86_64.whl"
+TORCHVISION_WHEEL="torchvision-0.3.0-cp37-cp37m-linux_x86_64.whl"
 
 # Install Colab TPU compat PyTorch/TPU wheels and dependencies
 pip uninstall -y torch torchvision
