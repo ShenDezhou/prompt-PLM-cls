@@ -32,14 +32,13 @@ pip install -r ../requirements.txt
 #import torch_xla.distributed.parallel_loader as pl
 #import torch_xla.distributed.data_parallel as dp
 #import torch_xla.distributed.xla_multiprocessing as xmp
+#
 #num_cores = 8
+#
 #devices = (
-#    xm.get_xla_supported_devices(
-#        max_devices=num_cores) if num_cores == 0 else [])
+#   xm.get_xla_supported_devices(max_devices=num_cores) if num_cores==8 else [])
 #print("Devices: {}".format(devices))
 
-#os.chdir('/content/drive/My Drive/lawbert/')
-#python train_model.py -c config/bert_config.json
 #
 #import os
 #os.chdir('/content/drive/MyDrive/lawbert/')
