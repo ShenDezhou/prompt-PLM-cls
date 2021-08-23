@@ -75,9 +75,9 @@ data_collator = DataCollatorForLanguageModeling(
 training_args = TrainingArguments(
     output_dir=TEMP,
     overwrite_output_dir=True,
-    num_train_epochs=1,
+    num_train_epochs=config.num_epoch,
     per_device_train_batch_size=config.batch_size,
-    save_steps=10_000,
+    save_steps=config.log_steps,
     save_total_limit=2,
     tpu_num_cores=8,
 )
