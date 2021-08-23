@@ -59,7 +59,7 @@ WRAPPED_MODEL.train()
 tokenizer = BertTokenizer.from_pretrained(config.bert_model_path)
 WRAPPED_MODEL.resize_token_embeddings(len(tokenizer))
 
-print("dataset maxl:", config.max_seq_len)
+print("dataset max len:", config.max_seq_len)
 
 dataset = LineByLineTextDataset(
     tokenizer=tokenizer,
@@ -71,8 +71,6 @@ data_collator = DataCollatorForLanguageModeling(
 )
 
 """### Finally, we are all set to initialize our Trainer"""
-
-
 
 training_args = TrainingArguments(
     output_dir=TEMP,

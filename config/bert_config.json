@@ -5,14 +5,15 @@
   "model_path": "model/bert/",
   "log_path": "log/",
 
-  "train_file_path": "data/data_tiny.csv",
-  "valid_file_path": "data2/train.json",
-  "trained_model_path": "../lawberta_wwm_ext",
+  "train_file_path": "data/corpus_data.txt",
+  "valid_file_path": "data/corpus_data.txt",
 
   "batch_size": 2,
 
-  "bert_model_path": "../roberta_wwm_ext",
+  "bert_model_path": "roberta_wwm_ext/",
   "trained_weight":"",
+  "trained_model_path": "modelbin/roberta_wwm_ext/",
+
 
   "is_AKDE": true,
   "dim_capsule": 16,
