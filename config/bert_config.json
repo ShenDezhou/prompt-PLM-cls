@@ -10,7 +10,7 @@
 
   "batch_size": 2,
 
-  "bert_model_path": "roberta_wwm_ext/",
+  "bert_model_path": "./roberta_wwm_ext",
   "trained_weight":"",
   "trained_model_path": "modelbin/roberta_wwm_ext/",
 
