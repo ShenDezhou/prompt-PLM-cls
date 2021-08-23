@@ -16,7 +16,16 @@ pip install "$TORCH_XLA_WHEEL"
 #pip install "$TORCHVISION_WHEEL"
 sudo apt-get install libomp5
 
-export LD_LIBRARY_PATH=/usr/local/lib/:$LD_LIBRARY_PATH
+#import os
+#os.environ['LD_LIBRARY_PATH']='/usr/local/lib'
+
+echo $LD_LIBRARY_PATH
+sudo ln -s /usr/local/lib/libmkl_intel_lp64.so /usr/local/lib/libmkl_intel_lp64.so.1
+sudo ln -s /usr/local/lib/libmkl_intel_thread.so /usr/local/lib/libmkl_intel_thread.so.1
+sudo ln -s /usr/local/lib/libmkl_core.so /usr/local/lib/libmkl_core.so.1
+
+ldconfig
+ldd /usr/local/lib/python3.7/dist-packages/torch/lib/libtorch.so
 
 #VERSION="20200516"  # @param ["1.5" , "20200516", "nightly"]
 #curl https://raw.githubusercontent.com/pytorch/xla/master/contrib/scripts/env-setup.py -o pytorch-xla-env-setup.py
