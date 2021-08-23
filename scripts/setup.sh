@@ -16,9 +16,9 @@ pip install "$TORCH_XLA_WHEEL"
 #pip install "$TORCHVISION_WHEEL"
 sudo apt-get install libomp5
 
-VERSION="20200516"  # @param ["1.5" , "20200516", "nightly"]
-curl https://raw.githubusercontent.com/pytorch/xla/master/contrib/scripts/env-setup.py -o pytorch-xla-env-setup.py
-python pytorch-xla-env-setup.py --version $VERSION
+#VERSION="20200516"  # @param ["1.5" , "20200516", "nightly"]
+#curl https://raw.githubusercontent.com/pytorch/xla/master/contrib/scripts/env-setup.py -o pytorch-xla-env-setup.py
+#python pytorch-xla-env-setup.py --version $VERSION
 
 pip install -r ../requirements.txt
 
@@ -35,7 +35,7 @@ pip install -r ../requirements.txt
 #num_cores = 8
 #devices = (
 #    xm.get_xla_supported_devices(
-#        max_devices=num_cores) if num_cores = 0 else [])
+#        max_devices=num_cores) if num_cores == 0 else [])
 #print("Devices: {}".format(devices))
 
 #os.chdir('/content/drive/My Drive/lawbert/')
