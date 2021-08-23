@@ -1,1 +1,2 @@
+cloud-tpu-client==0.10
 transformers===4.8.0
