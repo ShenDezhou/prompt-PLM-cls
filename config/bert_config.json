@@ -8,16 +8,11 @@
   "train_file_path": "data/corpus_data.txt",
   "valid_file_path": "data/corpus_data.txt",
 
-  "batch_size": 2,
+  "batch_size": 4,
 
   "bert_model_path": "./roberta_wwm_ext",
   "trained_weight":"",
   "trained_model_path": "modelbin/roberta_wwm_ext/",
-
-
-  "is_AKDE": true,
-  "dim_capsule": 16,
-  "num_compressed_capsule": 128,
 
   "hidden_size": 1024,
   "num_classes": 4,
@@ -31,11 +26,6 @@
   "max_grad_norm": 1e-2,
 
   "prediction_path":"output/submissions",
-
-
-  "type_lambda": 1,
-  "sp_lambda": 5,
-  "sp_threshold": 0.5,
   "log_steps": 2000,
   "num_cores": 8,
   "serial_load": true,

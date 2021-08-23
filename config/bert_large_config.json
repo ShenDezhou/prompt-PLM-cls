@@ -1,22 +1,18 @@
 {
   "model_type": "bert",
-  "max_seq_len": 128,
+  "max_seq_len": 512,
   "max_query_len": 50,
   "model_path": "model/bert/",
   "log_path": "log/",
 
-  "train_file_path": "data/data_tiny.csv",
-  "valid_file_path": "data2/train.json",
-  "trained_model_path": "../lawberta_wwm_large_ext",
+  "train_file_path": "data/corpus_data.txt",
+  "valid_file_path": "data/corpus_data.txt",
 
-  "batch_size": 8,
+  "batch_size": 2,
 
-  "bert_model_path": "../wwm_large_ext",
+  "bert_model_path": "./roberta_wwm_large_ext",
   "trained_weight":"",
-
-  "is_AKDE": true,
-  "dim_capsule": 16,
-  "num_compressed_capsule": 128,
+  "trained_model_path": "modelbin/roberta_wwm_large_ext/",
 
   "hidden_size": 1024,
   "num_classes": 4,
@@ -30,11 +26,6 @@
   "max_grad_norm": 1e-2,
 
   "prediction_path":"output/submissions",
-
-
-  "type_lambda": 1,
-  "sp_lambda": 5,
-  "sp_threshold": 0.5,
   "log_steps": 2000,
   "num_cores": 8,
   "serial_load": true,
