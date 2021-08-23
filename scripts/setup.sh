@@ -16,6 +16,8 @@ pip install "$TORCH_XLA_WHEEL"
 #pip install "$TORCHVISION_WHEEL"
 sudo apt-get install libomp5
 
+export LD_LIBRARY_PATH=/usr/local/lib/:$LD_LIBRARY_PATH
+
 #VERSION="20200516"  # @param ["1.5" , "20200516", "nightly"]
 #curl https://raw.githubusercontent.com/pytorch/xla/master/contrib/scripts/env-setup.py -o pytorch-xla-env-setup.py
 #python pytorch-xla-env-setup.py --version $VERSION
