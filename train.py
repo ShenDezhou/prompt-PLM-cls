@@ -3,7 +3,7 @@ import json
 import os
 from types import SimpleNamespace
 
-import torch
+# import torch
 import torch_xla
 import torch_xla.core.xla_model as xm
 import torch_xla.debug.metrics as met
@@ -94,5 +94,5 @@ trainer = Trainer(
 trainer.train(model_path=config.bert_model_path)
 WRAPPED_MODEL.to('cpu')
 trainer.save_model(output_dir=config.trained_model_path)
-torch.save(WRAPPED_MODEL.state_dict(), os.path.join(config.trained_model_path, 'pytorch_model.bin'))
+torch_xla.save(WRAPPED_MODEL.state_dict(), os.path.join(config.trained_model_path, 'pytorch_model.bin'))
 
