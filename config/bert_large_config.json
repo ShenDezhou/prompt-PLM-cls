@@ -1,6 +1,6 @@
 {
   "model_type": "bert",
-  "max_seq_len": 512,
+  "max_seq_len": 128,
   "max_query_len": 50,
   "model_path": "model/bert/",
   "log_path": "log/",
@@ -8,7 +8,7 @@
   "train_file_path": "data/corpus_data.txt",
   "valid_file_path": "data/corpus_data.txt",
 
-  "batch_size": 4,
+  "batch_size": 16,
 
   "bert_model_path": "./roberta_wwm_large_ext",
   "trained_weight":"",
@@ -19,7 +19,7 @@
   "dropout": 0.05,
 
   "lr": 1e-4,
-  "num_epoch": 1,
+  "num_epoch": 10,
   "num_warmup_steps": 100,
   "num_training_steps": 32000,
   "gradient_accumulation_steps": 8,
