@@ -8,7 +8,7 @@
   "train_file_path": "data/corpus_data.txt",
   "valid_file_path": "data/corpus_data.txt",
 
-  "batch_size": 16,
+  "batch_size": 32,
 
   "bert_model_path": "./roberta_wwm_ext",
   "trained_weight":"",
@@ -18,8 +18,8 @@
   "num_classes": 4,
   "dropout": 0.05,
 
-  "lr": 1e-4,
-  "num_epoch": 2,
+  "lr": 1e-3,
+  "num_epoch": 4,
   "num_warmup_steps": 100,
   "num_training_steps": 32000,
   "gradient_accumulation_steps": 8,
